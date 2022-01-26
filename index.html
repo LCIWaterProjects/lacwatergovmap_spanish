@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <title>Los Angeles County Water Systems</title>
+        <meta charset="utf-8" />
+
+        <!-- style sheets -->
+        <link rel="stylesheet" href="css/style.css">
+
+        <!-- leaflet -->
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+        <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+
+        <!-- jquery -->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+        <!-- classy brew -->
+        <script src="js/classybrew.js"></script>
+
+        <!-- apex charts -->
+        <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+
+        <!-- js-grid -->
+        <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jsgrid/1.5.3/jsgrid.min.css" />
+        <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jsgrid/1.5.3/jsgrid-theme.min.css" />
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jsgrid/1.5.3/jsgrid.min.js"></script>
+        
+    <!-- selectivity dropdown-->
+    <link href="css/font-awesome.css" rel="stylesheet" />
+    <link href="css/selectivity.css" rel="stylesheet" />
+    <script src="js/external/selectivity-jquery.min.js"></script>
+    <script src="js/external/selectivity.js"></script>
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet-geosearch@3.0.0/dist/geosearch.css"/>
+    <script src="https://unpkg.com/leaflet-geosearch@3.1.0/dist/bundle.min.js"></script>
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.css" />
+    <script src="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.js"></script>
+   
+</head>
+<body>
+
+    <div class="header">
+        Los Angeles County Water System Governance Map 
+    </div>
+	<div class = "headerbuttons"> 
+        | <a href="https://github.com/LCIWaterProjects/Water-System-Data" target="_blank"> Map Data</a> |
+        <a href="https://innovation.luskin.ucla.edu/wp-content/uploads/2021/07/LA-County-Small-Water-System-Risk-Assessment.pdf" target="_blank">Spanish Map</a> |
+		<a href="https://innovation.luskin.ucla.edu/water-lab/" target="_blank">Human Right to Water Solutions Lab</a> |
+		<a href="https://forms.gle/DycWot4JLkfxbfcF9" target="_blank">Provide Feedback</a> |
+	</div>
+    <div class="sidebar">
+        <div class = 'sidebar-intro'>
+            <button onclick="on()">Indigenous Land & Water Acknowledgment</button>
+             <b>Learn How to Use The Map</b>
+                <br><button onclick="IntroOn()">Click Here for Map Instructions</button>
+                <br><button onclick="Tutorial()">Watch a Map Tutorial</button>
+              
+
+        </div>
+        <div class="sidebar-content">
+            <p><b>Water System Governance</b>
+            <br><button onclick='myGovTypeFunction()'>Governance Types</button> <b class="img" title=
+            "Water systems in Los Angeles County fall into eight different governance types. Governance types vary based on whether a system is publicly or privately owned. Governance types tell us how a water system is regulated and the processes for choosing leadership, operations, and engagement. To learn more about governance types visit the Resources page of this website. 
+            
+            " font-size = "14 px"><img src="https://www.clipartmax.com/png/middle/95-953735_instagram-icon-no-background-download-information-icon-png.png" width="15px"></b>
+            <br><button onclick='myMechTypeFunction()'>How Water System Leadership Is Chosen</button> <b class="img" title= 
+            "The majority of water systems in Los Angeles County select leadership through elections. In Los Angeles County elections for City, County, and Special District systems are held for voters in the districts. Investor-Owned Untitlies (IOUs) and Mutual Water Companys hold shareholder elections. To learn more about your systems election or appoint process click on the water system on the map and visit the water system website linked in the info panel.
+            
+            "><img src="https://www.clipartmax.com/png/middle/95-953735_instagram-icon-no-background-download-information-icon-png.png" width="15px"></b>
+            <br><button onclick='myPopFunction()'>Water System Population</button> <b class="img" title=
+            "Water system population is a count of the number of people of live in the water system boundary.
+            "><img src="https://www.clipartmax.com/png/middle/95-953735_instagram-icon-no-background-download-information-icon-png.png" width="15px"></b>
+            <br><button onclick='myServeFunction()'>Water System Service Connections</button> <b class="img" title=
+            "Water system service connections is a count of the number of service connections, or households, served by a water system. Many apartment buildings in Los Angeles County only have one service connection, which is why you may not recieve a water bill in the mail if you are a renter. The bill will be sent to your landlord.
+            
+            "><img src="https://www.clipartmax.com/png/middle/95-953735_instagram-icon-no-background-download-information-icon-png.png" width="15px"></b>
+
+            <br><b>Water Bill</b>
+            <br><button onclick='myBillFunction()'>Average Water Bill</button> <b class="img" title="Average water bill is calculated assuming average household consumption of 6 CCF which reflects water conservation goals and meets California's Human Right to Water goal. Most water systems measure residential water use in CCF (centum cubic feet) or HCF (hundred cubic feet). A single CCF or HCF is 748 gallons.
+            "><img src="https://www.clipartmax.com/png/middle/95-953735_instagram-icon-no-background-download-information-icon-png.png" width="15px"></b>
+
+            <br><button onclick='MinWageFunction()'>Hours of Minimum Wage</button> <b class="img" title="How much do you have to work to pay your water bill? This map shows the number of hours it takes working at Los Angeles County's $15 per hour minimum wage to pay your systems average water bill. 
+            "><img src="https://www.clipartmax.com/png/middle/95-953735_instagram-icon-no-background-download-information-icon-png.png" width="15px"></b>
+
+            <br><b>Water System Performance</b>
+
+            <br><button onclick='myNoOpFunction()'>Primary Water Source</button> <b class="img" title="This map shows a water system's primary water source. Water systems may have multiple sources from surface water, ground water, or recycled water. To learn more about where your system's water sources read the systems urban water management plan. 
+            "><img src="https://www.clipartmax.com/png/middle/95-953735_instagram-icon-no-background-download-information-icon-png.png" width="15px"></b>
+
+            <br><button onclick='myOpBelowFunction()'>Operator Certification</button> <b class="img" title="Water system operators are responsible for the maintanance and operation of water system treatment technology and infrastructure. As new technology is needed to ensure drinking water is safe water system operators must be certified at higher levels. If your systems operator is below certification your system may be at higher risk of failure. To see your systems required operator level and current operator level click on your water system and view the info box.
+            "><img src="https://www.clipartmax.com/png/middle/95-953735_instagram-icon-no-background-download-information-icon-png.png" width="15px"></b>
+
+            <br><button onclick='MCLFunction()'>Water System Violations</button> <b class="img" title="This map shows the number of water system violations a system had from 2014-2018. To learn more about your water system's performance or violations click on the water system on the map and go to the Consumer Confidence Report linked in the info box.
+            "><img src="https://www.clipartmax.com/png/middle/95-953735_instagram-icon-no-background-download-information-icon-png.png" width="15px"></b>
+
+            <br><button onclick='RiskFunction()'>Water System Risk Score</button> <b class="img" title="The Water System Risk Score measures the risk of a water system failing to provide clean drinking water that meets regulatory standards. Only systems with 3,300 service connections or less are included in the risk scoring. To learn more about the risk scores visit the Resources page and read the Los Angeles County Risk Assessment.
+            "><img src="https://www.clipartmax.com/png/middle/95-953735_instagram-icon-no-background-download-information-icon-png.png" width="15px"></b>
+           
+            
+            </div>
+            </div>
+
+    <div class="content">
+        <div id="overlay" onclick="off()">
+            <div id="text">
+                
+                <h3>Indigenous Land and Water Acknowledgment</h3>
+                Water management and governance in California is a system rooted in the displacement of Indigenous people. This system has been shaped by historical legacies of institutional and environmental racism that lead to disproportionate access to safe, clean, and affordable drinking water. 
+                <br>
+                <br>The Luskin Center for Innovation at UCLA acknowledges our presence on the traditional, ancestral, and unceded territory of the Gabrielino/Tongva peoples.
+                <br>
+                <br>We recognize that there is no justice without the return of sacred land and water to native peoples. We also acknowledge the critical role water protectors and Indigenous organizers  have in shaping the future of water in California. We invite you to connect with those groups directly to learn more about Indigenous environmental justice work. 
+                <br>
+                <br>Our hope is that this tool is useful for all communities to better understand and navigate their local water systems and water system governance in order to advocate for just and equitable access to clean and affordable drinking water.
+                <br>
+                <br>This map is a continuous work in progress. We welcome your feedback on how it can best serve your community and how we can work together to increase accessibility to water data.
+                <br>
+                <br> <h3>Click anywhere to view the map.</h3>
+                </div>
+          </div>
+          <div id="map">    
+
+        </div>
+          <div id="Introoverlay" onclick="IntroOff()">
+            <div id="Introtext">
+                
+                <h3>Welcome to the Los Angeles County Water Governance Mapping Tool</h3>
+                <br>Use this tool to explore water system data for community water systems in Los Angeles County.
+                <br>
+                <br><b>Search:</b> Click on the magnifying glass button on the map and enter your address to zoom in on your water system. 
+                <br>
+                <br><b>Visualize:</b> Click on the blue buttons in the sidebar to visualize data points and compare water systems across Los Angeles County. 
+                <br>
+                <br><b>Hover:</b> Hover your mouse over the "i" icon on the map legend to learn more about the data visualized on the map. 
+                <br>
+                <br><b>Click:</b> Click on a water system on the map to generate an info panel that displays more information about the water system. 
+                <br>
+                <br><b>Data:</b> Click on the "Map Data" button at the top of the page to view a searchable data table for the mapping tool. 
+                <br>
+                <br> <h3>Click anywhere to view the map.</h3>
+                </div>
+          </div>
+          <div id="map">    
+
+        </div>
+        <div id="Tutorialoverlay" onclick="TutorialOff()">
+            <div id="Tutorialtext">
+                
+                <h3>Tutorial Video Coming Soon.</h3>
+                <br>
+                <br> <h3>Click anywhere to view the map.</h3>
+                </div>
+          </div>
+          <div id="map">    
+
+        </div>
+
+    </div>
+    <div class="footer">
+       
+	
+        <!-- <div class ="footertable"></div> -->
+        <img src="https://innovation.luskin.ucla.edu/wp-content/uploads/2019/04/White-Luskin-Logo-201804-300x26.png" width="300px">
+    </div>
+
+    <script src="js/map.js"></script>
+    
+</body>
+</html>

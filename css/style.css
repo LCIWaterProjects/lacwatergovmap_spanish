@@ -1,0 +1,410 @@
+body,html {
+    margin:0;
+    height:100%;
+    width:100%;
+}
+
+#map {
+    height: 100%;
+    text-align: center;
+    z-index: 1;
+  
+}
+
+body {
+    display:grid;
+    grid-template-rows: 60px 1fr ;
+    grid-template-columns: 300px 1fr;
+    grid-template-areas: 
+    "header header headerbuttons"
+    "sidebar content content"
+    "sidebar content content"
+    "footer footer footer";
+   
+}
+
+.header {
+    text-align: left;
+    grid-area: header;
+    padding:10px;
+    background-color: #005687;
+    color: white;
+    font-size: 2em;
+    max-width: 50%;
+    z-index: 1;
+
+}
+.headerbuttons {
+    text-align: right;
+    grid-area: header;
+    padding:10px;
+    background-color: #005687;
+    color: white;
+    font-size: 2em;
+    max-width: 100%;
+
+}
+
+a{
+    text-align: center;
+    grid-area: header;
+    padding:10px;
+    
+    color: white;
+    font-size: 0.75em;
+
+}
+.legend {
+    grid-area: legend;
+    width:inherit;
+    height:inherit;
+    text-align: right;
+}
+
+/*.legend-inner {
+    font-size: 0.8em;
+    text-align: right;
+    padding: 100px;
+    /* background-color: gainsboro; */
+    /* grid-area: legend; */
+
+.nav {
+    grid-area: nav;
+    padding:10px;
+    background-color: #444;
+    color: white;
+    font-size: 1.2em;
+}
+
+.sidebar-intro {
+    line-height: 2.6em;
+    color: rgb(0, 0, 0);
+    grid-area: sidebar;
+    padding:10px;
+    background-color: #ffffff;
+
+}
+.sidebar {
+    line-height: 2.6em;
+    color: #444;
+    grid-area: sidebar;
+    padding:10px;
+    background-color: #ffffff;
+    /*overflow:scroll; /* allows the sidebar to overflow with a scrollbar */
+}
+
+.sidebar-title {
+    color: rgb(0, 0, 0)
+}
+
+.sidebar-item:hover {
+    background-color: rgb(138, 167, 14);
+}
+
+.dashboard {
+    grid-area: dashboard;
+    max-width: 200;
+    max-height: 400;
+    margin: 35px auto;
+    background-color: #E0E0E0;
+}
+
+
+.Newdashboard {
+    grid-area: dashboard;
+    max-width: 200;
+    max-height: 400;
+    margin: 35px auto;
+    background-color: #E0E0E0;
+}
+
+.content {
+    grid-area: content;
+    resize: none;
+    max-height: 700;
+    overflow: clip;
+   
+}
+
+.footer {
+    grid-area: footer;
+    padding: 10px;
+    background-color: #005687;
+    color: rgb(255, 255, 255);
+    overflow: auto;
+    max-height: 200;
+    border-style:solid;
+    border-width: thin;
+    border-color: #E0E0E0;
+}
+
+/* .footertable {
+    grid-area: footer;
+    padding: 10px;
+    background-color: #005687;
+    color: rgb(0, 0, 0);
+    overflow: auto;
+    min-width: 300px;
+    column-width: 2000px;
+    height: 1000px; */
+
+
+.jsgrid-header-cell{
+    min-width: 200px;
+}
+   
+
+/* legend styles */
+.info {
+    padding: 8px 10px;
+    font: 14px/16px Verdana, Geneva, Tahoma, sans-serif;
+    background: white;
+    background: rgba(255,255,255,0.8);
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    border-radius: 5px;
+    max-width: 400px;
+    min-height: 50px;
+    overflow:auto;
+}
+
+.info-legend{
+padding: 6px 8px;
+background-color: rgba(255,255,255,0.8);
+box-shadow: 0 0 15px rgba(0,0,0,0.2);
+border-radius: 5px;
+overflow: auto;
+}
+.legend div {
+    width: 18px;
+    height: 18px;
+    float: left;
+    margin-right: 8px;
+    opacity: 0.7;
+    
+}
+
+.info h4 {
+    margin: 0 0 5px;
+    color: #777;
+}
+
+.legend {
+    line-height: 18px;
+    color: black;
+    font-weight: 400;
+    text-align: left;
+}
+.legend i {
+    width: 100px;
+    height: 100px;
+    float: left;
+    margin-right: 8px;
+    opacity: 0.7;
+}
+
+.item {
+    color: #ccc;
+    margin:3px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.map-item {
+    border: 1px solid #333;
+    padding: 10px;
+    background-color: #333;
+}
+
+.sidebar-item {
+    
+    background: rgb(182, 199, 245); /* background color of the card */
+    border: 1px solid rgb(104, 131, 253); /* border width and color */
+    margin:0px; /* outer padding */
+    cursor: pointer; /* change cursor to hand on hover */
+}
+
+.figure {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+img.figure {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+button {
+    background-color: #005687;
+    color: white;
+    padding: 10px;
+    width: 250px;
+    font-size: 15px;
+    border: none;
+    border-radius: 4px;
+    transition-duration: 0.3s;
+    cursor: pointer;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+button:hover {
+    background-color: #E5FCFF;
+    color: black;
+}
+
+b {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 98%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-overflow: inherit;
+    text-align: left;
+}
+
+/* Fonts */
+.header {font-family: Verdana, Geneva, Tahoma, sans-serif;}
+.header {font-size: 180%;}
+.headerbuttons {font-family: Verdana, Geneva, Tahoma, sans-serif;}
+.headerbuttons {font-size: 150%;} 
+.sidebar-item {font-family: Verdana, Geneva, Tahoma, sans-serif;}
+.sidebar {font-family: Verdana, Geneva, Tahoma, sans-serif;}
+.sidebar-item {font-size: 80%;}
+.sidebar-content{font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: 100%;}
+.footer{font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: 100%;}
+.footertable{font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: 100%;}
+#text{font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: 100%;}
+#Introtext{font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: 100%;}
+
+/* Dropdown Button */
+.dropbtn {
+    background-color: #005687;
+    color: white;
+    padding: 10px;
+    font-size: 15px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  /* Dropdown button on hover & focus */
+  .dropbtn:hover, .dropbtn:focus {
+    background-color: #F0EBD8
+  }
+  
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: gainsboro;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    cursor: pointer;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: white;
+    padding: 10px 14px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {background-color: grey}
+  
+  /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+  .show {display:block;}
+
+.info-value{
+    font-size: 2em;
+}
+
+#overlay {
+    position: fixed; /* Sit on top of the page content */
+    display: content ; /* Hidden by default */
+    width: 100%; /* Full width (cover the whole page) */
+    height: 100%; /* Full height (cover the whole page) */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.8); /* Black background with opacity */
+    z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+    cursor: pointer; /* Add a pointer on hover */
+  }
+  
+  #text{
+    position: relative;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    font-size: 18px;
+    color: white;
+    padding: 10px;
+    transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);}
+
+  #Introoverlay{
+    position: fixed; /* Sit on top of the page content */
+    display: none ; /* Hidden by default */
+    width: 100%; /* Full width (cover the whole page) */
+    height: 100%; /* Full height (cover the whole page) */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.8); /* Black background with opacity */
+    z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+    cursor: pointer; /* Add a pointer on hover */
+  }
+
+    #Introtext{
+        position: relative;
+        text-align: center;
+        top: 50%;
+        left: 50%;
+        font-size: 18px;
+        color: white;
+        padding: 10px;
+        transform: translate(-50%,-50%);
+        -ms-transform: translate(-50%,-50%);}
+
+    #Tutorialoverlay{
+            position: fixed; /* Sit on top of the page content */
+            display: none ; /* Hidden by default */
+            width: 100%; /* Full width (cover the whole page) */
+            height: 100%; /* Full height (cover the whole page) */
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.8); /* Black background with opacity */
+            z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+            cursor: pointer; /* Add a pointer on hover */
+          }
+        
+    #Tutorialtext{
+                position: relative;
+                text-align: center;
+                top: 50%;
+                left: 50%;
+                font-size: 18px;
+                color: white;
+                padding: 10px;
+                transform: translate(-50%,-50%);
+                -ms-transform: translate(-50%,-50%);}
+      
+.links{
+    font-size: 18px;
+  line-height: 1em;
+   
+ 
+}
