@@ -5,7 +5,7 @@ let lat = 34;
 let lon = -118;
 let zl = 9;
 
-let geojsonPath = 'https://raw.githubusercontent.com/LCIWaterProjects/lacwatergovmap/main/data/Los%20Angeles%20County%20Water.geojson';
+let geojsonPath = 'https://raw.githubusercontent.com/LCIWaterProjects/lacwatergovmap_spanish/main/data/LA_Water_for_Span.geojson';
 let geojson_data;
 let geojson_layer;
 
