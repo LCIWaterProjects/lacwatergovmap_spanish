@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-        <title>Los Angeles County Water Systems</title>
+        <title>Sistema de Agua del Condado de Los Ángeles</title>
         <meta charset="utf-8" />
 
         <!-- style sheets -->
@@ -41,60 +41,60 @@
 <body>
 
     <div class="header">
-        Los Angeles County Water System Governance Map 
+        Mapa de Gobernanza del Sistema de Agua del Condado de Los Ángeles
     </div>
 	<div class = "headerbuttons"> 
-        | <a href="https://github.com/LCIWaterProjects/Water-System-Data" target="_blank"> Map Data</a> |
-        <a href="https://innovation.luskin.ucla.edu/wp-content/uploads/2021/07/LA-County-Small-Water-System-Risk-Assessment.pdf" target="_blank">Spanish Map</a> |
-		<a href="https://innovation.luskin.ucla.edu/water-lab/" target="_blank">Human Right to Water Solutions Lab</a> |
-		<a href="https://forms.gle/DycWot4JLkfxbfcF9" target="_blank">Provide Feedback</a> |
+        | <a href="https://github.com/LCIWaterProjects/Water-System-Data" target="_blank">Datos de Mapa</a> |
+        <a href="https://innovation.luskin.ucla.edu/wp-content/uploads/2021/07/LA-County-Small-Water-System-Risk-Assessment.pdf" target="_blank">Mapa Ingles</a> |
+		<a href="https://innovation.luskin.ucla.edu/water-lab/" target="_blank">Laboratorio de Soluciones del Derecho Humano al Agua</a> |
+		<a href="https://forms.gle/DycWot4JLkfxbfcF9" target="_blank">Suministre Realimentación</a> |
 	</div>
     <div class="sidebar">
         <div class = 'sidebar-intro'>
-            <button onclick="on()">Indigenous Land & Water Acknowledgment</button>
-             <b>Learn How to Use The Map</b>
-                <br><button onclick="IntroOn()">Click Here for Map Instructions</button>
-                <br><button onclick="Tutorial()">Watch a Map Tutorial</button>
+            <button onclick="on()">Reconocimiento de Tierras y Aguas Indígenas</button>
+             <b>Aprende a Usar el Mapa</b>
+                <br><button onclick="IntroOn()">Instrucciones del Mapa</button>
+                <br><button onclick="Tutorial()">Tutorial de Mapa</button>
               
 
         </div>
         <div class="sidebar-content">
-            <p><b>Water System Governance</b>
-            <br><button onclick='myGovTypeFunction()'>Governance Types</button> <b class="img" title=
-            "Water systems in Los Angeles County fall into eight different governance types. Governance types vary based on whether a system is publicly or privately owned. Governance types tell us how a water system is regulated and the processes for choosing leadership, operations, and engagement. To learn more about governance types visit the Resources page of this website. 
+            <p><b>Gobernanza del Sistema de Agua</b>
+            <br><button onclick='myGovTypeFunction()'>Tipos de Gobernanza</button> <b class="img" title=
+            "Los sistemas de agua en el condado de Los Ángeles se dividen en ocho tipos diferentes de gobernanza. Los tipos de gobernanza varían en función si un sistema es de propiedad pública o privada. Los tipos de gobernanza nos dicen cómo se regula un sistema de agua y los procesos para elegir el liderazgo, las operaciones y el compromiso.
             
             " font-size = "14 px"><img src="https://www.clipartmax.com/png/middle/95-953735_instagram-icon-no-background-download-information-icon-png.png" width="15px"></b>
-            <br><button onclick='myMechTypeFunction()'>How Water System Leadership Is Chosen</button> <b class="img" title= 
-            "The majority of water systems in Los Angeles County select leadership through elections. In Los Angeles County elections for City, County, and Special District systems are held for voters in the districts. Investor-Owned Untitlies (IOUs) and Mutual Water Companys hold shareholder elections. To learn more about your systems election or appoint process click on the water system on the map and visit the water system website linked in the info panel.
+            <br><button onclick='myMechTypeFunction()'>Cómo se Elige el Liderazgo del Sistema de Agua</button> <b class="img" title= 
+            "La mayoría de los sistemas de agua en el condado de Los Ángeles seleccionan el liderazgo a través de elecciones. En el condado de Los Ángeles, se llevan a cabo elecciones para los sistemas de ciudad, condado y distrito especial para los votantes de los distritos. Los títulos de propiedad de los inversores (IOU) y las compañías de agua mutua celebran elecciones de accionistas. Para obtener más información sobre la elección de su sistema o el proceso de designación, haga clic en el sistema de agua en el mapa y visite el sitio web del sistema de agua vinculado en el panel de información.
             
             "><img src="https://www.clipartmax.com/png/middle/95-953735_instagram-icon-no-background-download-information-icon-png.png" width="15px"></b>
-            <br><button onclick='myPopFunction()'>Water System Population</button> <b class="img" title=
-            "Water system population is a count of the number of people of live in the water system boundary.
+            <br><button onclick='myPopFunction()'>Población del Sistema de Agua</button> <b class="img" title=
+            "La población del sistema de agua es un conteo del número de personas que viven en el límite del sistema de agua.
+
             "><img src="https://www.clipartmax.com/png/middle/95-953735_instagram-icon-no-background-download-information-icon-png.png" width="15px"></b>
-            <br><button onclick='myServeFunction()'>Water System Service Connections</button> <b class="img" title=
-            "Water system service connections is a count of the number of service connections, or households, served by a water system. Many apartment buildings in Los Angeles County only have one service connection, which is why you may not recieve a water bill in the mail if you are a renter. The bill will be sent to your landlord.
+            <br><button onclick='myServeFunction()'>Conexiones de Servicio del Sistema de Agua</button> <b class="img" title=
+            "Las conexiones de servicio del sistema de agua son un recuento de la cantidad de conexiones de servicio, u hogares, atendidos por un sistema de agua. Muchos edificios de apartamentos en el condado de Los Ángeles solo tienen una conexión de servicio, por lo que es posible que no reciba una factura de agua por correo si es un inquilino. La factura se enviará a su arrendador.
             
             "><img src="https://www.clipartmax.com/png/middle/95-953735_instagram-icon-no-background-download-information-icon-png.png" width="15px"></b>
 
-            <br><b>Water Bill</b>
-            <br><button onclick='myBillFunction()'>Average Water Bill</button> <b class="img" title="Average water bill is calculated assuming average household consumption of 6 CCF which reflects water conservation goals and meets California's Human Right to Water goal. Most water systems measure residential water use in CCF (centum cubic feet) or HCF (hundred cubic feet). A single CCF or HCF is 748 gallons.
+            <br><b>Factura de Agua</b>
+            <br><button onclick='myBillFunction()'>Factura de Agua Promedio</button> <b class="img" title="La factura de agua promedio se calcula asumiendo un consumo doméstico promedio de 6 CCF, lo que refleja los objetivos de conservación del agua y cumple con el objetivo del Derecho humano al agua de California. La mayoría de los sistemas de agua miden el uso residencial de agua en CCF (centum cubic feet) o HCF (cien pies cúbicos). Un solo CCF o HCF son 748 galones.
             "><img src="https://www.clipartmax.com/png/middle/95-953735_instagram-icon-no-background-download-information-icon-png.png" width="15px"></b>
 
-            <br><button onclick='MinWageFunction()'>Hours of Minimum Wage</button> <b class="img" title="How much do you have to work to pay your water bill? This map shows the number of hours it takes working at Los Angeles County's $15 per hour minimum wage to pay your systems average water bill. 
+            <br><button onclick='MinWageFunction()'>Horas de Salarion Minimo</button> <b class="img" title="¿Cuánto tienes que trabajar para pagar su factura de agua? Este mapa muestra la cantidad de horas tiene que trabajar con el salario mínimo de $15 por hora del condado de Los Ángeles para pagar la factura promedio de agua de su sistema.
             "><img src="https://www.clipartmax.com/png/middle/95-953735_instagram-icon-no-background-download-information-icon-png.png" width="15px"></b>
 
-            <br><b>Water System Performance</b>
-
-            <br><button onclick='myNoOpFunction()'>Primary Water Source</button> <b class="img" title="This map shows a water system's primary water source. Water systems may have multiple sources from surface water, ground water, or recycled water. To learn more about where your system's water sources read the systems urban water management plan. 
+            <br><b>Rendimiento del Sistema de Agua</b>
+            <br><button onclick='myNoOpFunction()'>Fuente de Agua Primaria</button> <b class="img" title="Este mapa muestra la fuente de agua primaria de un sistema de agua. Los sistemas de agua pueden tener múltiples fuentes de agua superficial, agua subterránea o agua reciclada. Para obtener más información sobre dónde se encuentran las fuentes de agua de su sistema, lea el plan de gestión del agua urbana del sistema.
             "><img src="https://www.clipartmax.com/png/middle/95-953735_instagram-icon-no-background-download-information-icon-png.png" width="15px"></b>
 
-            <br><button onclick='myOpBelowFunction()'>Operator Certification</button> <b class="img" title="Water system operators are responsible for the maintanance and operation of water system treatment technology and infrastructure. As new technology is needed to ensure drinking water is safe water system operators must be certified at higher levels. If your systems operator is below certification your system may be at higher risk of failure. To see your systems required operator level and current operator level click on your water system and view the info box.
+            <br><button onclick='myOpBelowFunction()'>Certificación del Operador</button> <b class="img" title="Los operadores del sistema de agua son responsables del mantenimiento y la operación de la infraestructura y la tecnología de tratamiento del sistema de agua. Como se necesita nueva tecnología para garantizar que el agua potable sea segura, los operadores del sistema de agua deben estar certificados en niveles más altos. Si su operador de sistemas está por debajo de la certificación, su sistema puede tener un mayor riesgo de falla. Para ver el nivel de operador requerido por sus sistemas y el nivel de operador actual, haga clic en su sistema de agua y vea el cuadro de información.
             "><img src="https://www.clipartmax.com/png/middle/95-953735_instagram-icon-no-background-download-information-icon-png.png" width="15px"></b>
 
-            <br><button onclick='MCLFunction()'>Water System Violations</button> <b class="img" title="This map shows the number of water system violations a system had from 2014-2018. To learn more about your water system's performance or violations click on the water system on the map and go to the Consumer Confidence Report linked in the info box.
+            <br><button onclick='MCLFunction()'>Infracciones del Sistema de Agua</button> <b class="img" title="Este mapa muestra la cantidad de violaciones del sistema de agua que tuvo un sistema entre 2014 y 2018. Para obtener más información sobre el rendimiento o las infracciones de su sistema de agua, haga clic en el sistema de agua en el mapa y vaya al Informe de confianza del consumidor vinculado en el cuadro de información.
             "><img src="https://www.clipartmax.com/png/middle/95-953735_instagram-icon-no-background-download-information-icon-png.png" width="15px"></b>
 
-            <br><button onclick='RiskFunction()'>Water System Risk Score</button> <b class="img" title="The Water System Risk Score measures the risk of a water system failing to provide clean drinking water that meets regulatory standards. Only systems with 3,300 service connections or less are included in the risk scoring. To learn more about the risk scores visit the Resources page and read the Los Angeles County Risk Assessment.
+            <br><button onclick='RiskFunction()'>Puntaje de Riesgo del Sistema de Agua</button> <b class="img" title="El puntaje de riesgo del sistema de agua mide el riesgo de que un sistema de agua no proporcione agua potable limpia que cumpla con los estándares regulatorios. Solo los sistemas con 3.300 conexiones de servicio o menos se incluyen en la puntuación de riesgo. Para obtener más información sobre las puntuaciones de riesgo, visite la página de Recursos y lea la Evaluación de riesgos del condado de Los Ángeles.
             "><img src="https://www.clipartmax.com/png/middle/95-953735_instagram-icon-no-background-download-information-icon-png.png" width="15px"></b>
            
             
@@ -105,18 +105,18 @@
         <div id="overlay" onclick="off()">
             <div id="text">
                 
-                <h3>Indigenous Land and Water Acknowledgment</h3>
-                Water management and governance in California is a system rooted in the displacement of Indigenous people. This system has been shaped by historical legacies of institutional and environmental racism that lead to disproportionate access to safe, clean, and affordable drinking water. 
+                <h3>Reconocimiento de Tierras y Aguas Indígenas</h3>
+                La gestión y la gobernanza del agua en California es un sistema arraigado en el desplazamiento de los pueblos indígenas. Este sistema ha sido moldeado por legados históricos de racismo institucional y ambiental que conducen a un acceso desproporcionado a agua potable segura, limpia y asequible.
                 <br>
-                <br>The Luskin Center for Innovation at UCLA acknowledges our presence on the traditional, ancestral, and unceded territory of the Gabrielino/Tongva peoples.
+                <br>El Centro de Luskin para la Innovación en UCLA reconoce nuestra presencia en el territorio tradicional, ancestral y no cedido de los pueblos Gabrielino/Tongva.
                 <br>
-                <br>We recognize that there is no justice without the return of sacred land and water to native peoples. We also acknowledge the critical role water protectors and Indigenous organizers  have in shaping the future of water in California. We invite you to connect with those groups directly to learn more about Indigenous environmental justice work. 
+                <br>Reconocemos que no hay justicia sin la devolución de la tierra y el agua sagrados a los pueblos originarios. También reconocemos el papel fundamental que tienen los protectores del agua y los organizadores indígenas en la configuración del futuro del agua en California. Lo invitamos a visitar nuestra página de Recursos para aprender más sobre el trabajo de justicia ambiental indígena y conectarse con estos grupos directamente.
                 <br>
-                <br>Our hope is that this tool is useful for all communities to better understand and navigate their local water systems and water system governance in order to advocate for just and equitable access to clean and affordable drinking water.
+                <br>Esperamos que esta página sea útil para que todas las comunidades comprendan mejor y naveguen por sus sistemas de agua locales y la gobernanza del sistema de agua a fin de abogar por un acceso justo y equitativo al agua potable limpia y asequible.
                 <br>
-                <br>This map is a continuous work in progress. We welcome your feedback on how it can best serve your community and how we can work together to increase accessibility to water data.
+                <br>Este mapa es un trabajo continuo en progreso. Agradecemos sus comentarios sobre cómo puede servir mejor a su comunidad y cómo podemos trabajar juntos para aumentar la accesibilidad a los datos del agua.
                 <br>
-                <br> <h3>Click anywhere to view the map.</h3>
+                <br> <h3>Haga clic en cualquier lugar para ver el mapa.</h3>
                 </div>
           </div>
           <div id="map">    
@@ -125,20 +125,20 @@
           <div id="Introoverlay" onclick="IntroOff()">
             <div id="Introtext">
                 
-                <h3>Welcome to the Los Angeles County Water Governance Mapping Tool</h3>
-                <br>Use this tool to explore water system data for community water systems in Los Angeles County.
+                <h3>Bienvenido a la Herramienta de Mapeo de la Gobernanza del Agua del Condado de Los Ángeles.</h3>
+                <br>Use esta herramienta para explorar los datos del sistema de agua para los sistemas de agua comunitarios en el Condado de Los Ángeles.
                 <br>
-                <br><b>Search:</b> Click on the magnifying glass button on the map and enter your address to zoom in on your water system. 
+                <br><b>Busque:</b> Haga clic en el botón de la lupa en el mapa e ingrese su dirección para acercar su agua. sistema.
                 <br>
-                <br><b>Visualize:</b> Click on the blue buttons in the sidebar to visualize data points and compare water systems across Los Angeles County. 
+                <br><b>Visualizar:</b> Haga clic en los botones azules en la barra lateral para visualizar puntos de datos y comparar los sistemas de agua en todo el condado de Los Ángeles.
                 <br>
-                <br><b>Hover:</b> Hover your mouse over the "i" icon on the map legend to learn more about the data visualized on the map. 
+                <br><b>Pase el Mouse: p</b> Pase el mouse sobre el ícono "i" en la leyenda del mapa para obtener más información sobre los datos visualizados en el mapa.
                 <br>
-                <br><b>Click:</b> Click on a water system on the map to generate an info panel that displays more information about the water system. 
+                <br><b>Hacer Clic:</b> Haga clic en un sistema de agua en el mapa para generar un panel de información que muestre más información sobre el sistema de agua.
                 <br>
-                <br><b>Data:</b> Click on the "Map Data" button at the top of the page to view a searchable data table for the mapping tool. 
+                <br><b>Datos:</b> Haga clic en el botón "Mapa de datos" en la parte superior de la página para ver una tabla de datos de búsqueda para el herramienta de mapeo.
                 <br>
-                <br> <h3>Click anywhere to view the map.</h3>
+                <br> <h3>Haga clic en cualquier lugar para ver el mapa.</h3>
                 </div>
           </div>
           <div id="map">    
@@ -147,9 +147,9 @@
         <div id="Tutorialoverlay" onclick="TutorialOff()">
             <div id="Tutorialtext">
                 
-                <h3>Tutorial Video Coming Soon.</h3>
+                <h3>Vídeo tutorial próximamente.</h3>
                 <br>
-                <br> <h3>Click anywhere to view the map.</h3>
+                <br> <h3>Haga clic en cualquier lugar para ver el mapa.</h3>
                 </div>
           </div>
           <div id="map">    
