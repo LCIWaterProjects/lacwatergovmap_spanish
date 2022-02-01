@@ -26,18 +26,19 @@ body {
 .header {
     text-align: left;
     grid-area: header;
-    padding:10px;
+    padding:7px;
     background-color: #005687;
     color: white;
-    font-size: 2em;
-    max-width: 50%;
+    font-size: 130%;
+    font-weight: bold;
+    max-width: 40%;
     z-index: 1;
 
 }
 .headerbuttons {
     text-align: right;
     grid-area: header;
-    padding:10px;
+    padding-bottom:10px;
     background-color: #005687;
     color: white;
     font-size: 2em;
@@ -48,10 +49,9 @@ body {
 a{
     text-align: center;
     grid-area: header;
-    padding:10px;
-    
+    padding:7px;
     color: white;
-    font-size: 0.75em;
+    font-size: 40%;
 
 }
 .legend {
@@ -80,7 +80,7 @@ a{
     line-height: 2.6em;
     color: rgb(0, 0, 0);
     grid-area: sidebar;
-    padding:10px;
+    text-align: center;
     background-color: #ffffff;
 
 }
@@ -256,18 +256,17 @@ button:hover {
 
 b {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 98%;
+    font-size: 92%;
     padding-top: 20px;
     padding-bottom: 20px;
     text-overflow: inherit;
-    text-align: left;
+    text-align: center;
+    font-weight: bolder;
 }
 
 /* Fonts */
 .header {font-family: Verdana, Geneva, Tahoma, sans-serif;}
-.header {font-size: 180%;}
 .headerbuttons {font-family: Verdana, Geneva, Tahoma, sans-serif;}
-.headerbuttons {font-size: 150%;} 
 .sidebar-item {font-family: Verdana, Geneva, Tahoma, sans-serif;}
 .sidebar {font-family: Verdana, Geneva, Tahoma, sans-serif;}
 .sidebar-item {font-size: 80%;}

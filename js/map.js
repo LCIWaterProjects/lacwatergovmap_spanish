@@ -522,16 +522,16 @@ function createLegend(){
 
         if(fieldtomap == 'GovCode'){
             div.innerHTML =
-            '<b>Water System <br>Governance Type</b><br>'+
-            '<div style="background-color: #6C91BF"></div>City/Municpal<br>' +
-            '<div style="background-color: #5BC8AF"></div>County<br>' +
-            '<div style="background-color: #51344D"></div>Investor Owned Utility<br>' +
-            '<div style="background-color: #FED18C"></div>Mutual Water Company<br>'+
-            '<div style="background-color: #109648"></div>Special District<br>' +
-            '<div style="background-color: #F46036"></div>Mobile Home<br>' +
-            '<div style="background-color: #1AC8ED"></div>Irrigation District<br>'+
-            '<div style="background-color: #C47335"></div>Other Private<br>'+
-            '<div style="background-color: #272727"></div>Unknown<br>'
+            '<b>Tipo de Gobernanza del Sistema de Agua</b><br>'+
+            '<div style="background-color: #6C91BF"></div>Ciudad/Municipal<br>' +
+            '<div style="background-color: #5BC8AF"></div>Condado<br>' +
+            '<div style="background-color: #51344D"></div>Utilidad Propiedad del Inversionista<br>' +
+            '<div style="background-color: #FED18C"></div>Compañía de Agua Mutua<br>'+
+            '<div style="background-color: #109648"></div>Distrito Especial<br>' +
+            '<div style="background-color: #F46036"></div>Casa Móvil/Remolque/Parque de<br>Casas Rodantes<br>' +
+            '<div style="background-color: #1AC8ED"></div>Distrito de Riego<br>'+
+            '<div style="background-color: #C47335"></div>Otra Privada<br>'+
+            '<div style="background-color: #272727"></div>Desconocida<br>'
             return div;
             
     
@@ -539,11 +539,11 @@ function createLegend(){
         else if(fieldtomap == 'New_MechCo'){
             div.innerHTML =
             
-            '<b>How Is Leadership Chosen?</b><br>'+
-            '<div style="background-color: #CECFC7"></div>No Data<br>'+
-            '<div style="background-color: #64B6AC"></div> Municipal Election<br>'+
-            '<div style="background-color: #E4572E"></div> Stakeholder Election<br>'+
-            '<div style="background-color: #F3A712"></div>Appointment<br>'
+            '<b>Como se Elige Liderazgo</b><br>'+
+            '<div style="background-color: #CECFC7"></div>Sin Datos<br>'+
+            '<div style="background-color: #64B6AC"></div>Elección Municipal<br>'+
+            '<div style="background-color: #E4572E"></div>Elección de las Partes Interesadas<br>'+
+            '<div style="background-color: #F3A712"></div>Nombramiento<br>'
            
            
             return div;
@@ -554,13 +554,13 @@ function createLegend(){
         }
         else if(fieldtomap == 'Population'){
             div.innerHTML =
-            '<b>Water System Population</b><br>'+
+            '<b>Población del Sistema</b><br>'+
             '<div style="background-color: #FFD899"></div>0 - 35,000<br>'+
             '<div style="background-color: #FFC247"></div>35,001 - 70,000<br>'+
             '<div style="background-color: #FF990A"></div>70,001 - 115,000<br>'+
             '<div style="background-color: #E37826"></div>115,001 - 270,000<br>'+
             '<div style="background-color: #BD580F"></div>270,001 - 476000<br>'+
-            '<div style="background-color: #8D3C01"></div>Over 476,000<br>'
+            '<div style="background-color: #8D3C01"></div>Mas de 476,000<br>'
 
             return div;
             console.log('mapping mechanism code')
@@ -570,13 +570,13 @@ function createLegend(){
         }
         else if(fieldtomap == 'Service_Co'){
             div.innerHTML =
-            '<b>Water System Service Connections</b><br>'+
+            '<b>Conexiones de Servicio del Sistema</b><br>'+
             '<div style="background-color: #BFEDCF"></div>0 - 500<br>'+
             '<div style="background-color: #8DCEB4"></div>501 - 3,300<br>'+
             '<div style="background-color: #62A7A6"></div>3,301 - 10,000<br>'+
             '<div style="background-color: #6A7AA0"></div>10,001 - 30,000<br>'+
             '<div style="background-color: #584884"></div>30,001 - 100,000<br>'+
-            '<div style="background-color: #330462"></div>Over 100,000<br>'
+            '<div style="background-color: #330462"></div>Mas de 100,000<br>'
 
             return div;
             console.log('mapping mechanism code')
@@ -587,13 +587,13 @@ function createLegend(){
         else if(fieldtomap == 'WaterBill'){
             div.innerHTML =
             
-            '<b>Average Water<br> Bill</b><br>'+
+            '<b>Factura de Agua</b><br>'+
             '<div style="background-color: #CECFC7"></div>No Data<br>'+
             '<div style="background-color: #F5B7B9"></div>$0 - $38<br>'+
             '<div style="background-color: #EE8185"></div>$38 -$57<br>'+
             '<div style="background-color: #E74B51"></div>$57 - $72<br>'+
             '<div style="background-color: #D71D24"></div>$72 - $90<br>'+
-            '<div style="background-color: #A4161A"></div>Over $90<br>'
+            '<div style="background-color: #A4161A"></div>Mas de $90<br>'
            
             
 
@@ -605,16 +605,16 @@ function createLegend(){
         }
         else if(fieldtomap == 'HMW'){
             div.innerHTML =
-            '<b>Minimum Wage<br>Hours</b>'+
-            '<br><div style="background-color: #CECFC7"></div>No Data<br>'+
-            '<div style="background-color: #F0FB9D"></div>1 Hour<br>' +
-            '<div style="background-color: #DCF613"></div>2 Hours<br>' +
-            '<div style="background-color: #97D91C"></div>3 Hours<br>'+
-            '<div style="background-color: #55A630"></div>4 Hours<br>' +
-            '<div style="background-color: #16834F"></div>5 Hours<br>' +
-            '<div style="background-color: #0B6B46"></div>6 Hours<br>' +
-            '<div style="background-color: #00523D"></div>7 Hours<br>'+
-            '<div style="background-color: #003D2D"></div>8 Hours<br>'
+            '<b>Horas de Salario Minimo</b>'+
+            '<br><div style="background-color: #CECFC7"></div>Sin Datos<br>'+
+            '<div style="background-color: #F0FB9D"></div>1 Hora<br>' +
+            '<div style="background-color: #DCF613"></div>2 Horas<br>' +
+            '<div style="background-color: #97D91C"></div>3 Horas<br>'+
+            '<div style="background-color: #55A630"></div>4 Horas<br>' +
+            '<div style="background-color: #16834F"></div>5 Horas<br>' +
+            '<div style="background-color: #0B6B46"></div>6 Horas<br>' +
+            '<div style="background-color: #00523D"></div>7 Horas<br>'+
+            '<div style="background-color: #003D2D"></div>8 Horas<br>'
           
 
 
@@ -626,12 +626,12 @@ function createLegend(){
         }
         else if(fieldtomap == 'RiskCode'){
             div.innerHTML =
-            '<b>Risk Score</b><br>'+
-            '<div style="background-color: #CECFC7"></div>Not In Risk Assessment<br>' +
-            '<div style="background-color: #20BF55"></div>Not At-Risk<br>' +
-            '<div style="background-color: #F9C846"></div>Potentially At-Risk<br>' +
-            '<div style="background-color: #F96900"></div>At-Risk<br>' +
-            '<div style="background-color: #E3170A"></div>Failing<br>' 
+            '<b>Puntaje de Riesgo</b><br>'+
+            '<div style="background-color: #CECFC7"></div>No en Evaluación de Riesgos<br>' +
+            '<div style="background-color: #20BF55"></div>No en Riesgo<br>' +
+            '<div style="background-color: #F9C846"></div>Potencialmente en Riesgo<br>' +
+            '<div style="background-color: #F96900"></div>En Riesgo<br>' +
+            '<div style="background-color: #E3170A"></div>Fallando<br>' 
             
 
 
@@ -643,10 +643,10 @@ function createLegend(){
         }
         else if(fieldtomap == 'OperatorBe'){
             div.innerHTML =
-            '<b>Does My System Operator Meet Requirements?</b><br>'+
-            '<div style="background-color: #FA0F36"></div>This system has no operator<br>' +
-            '<div style="background-color: #028090"></div>The operator is below certification<br>' +
-            '<div style="background-color: #ABB4C4"></div>This operator meets certficiations<br>' 
+            '<b>Certificación del Operador</b><br>'+
+            '<div style="background-color: #FA0F36"></div>Este sistema no tiene operador.<br>' +
+            '<div style="background-color: #028090"></div>El operador está por debajo de la certificación.<br>' +
+            '<div style="background-color: #ABB4C4"></div>Este operador cumple con las certificaciones.<br>' 
 
 
             return div;
@@ -657,13 +657,13 @@ function createLegend(){
         }
         else if(fieldtomap == 'PWS_Code'){
             div.innerHTML =
-            '<b>Primary Water Source</b><br>'+
-            '<div style="background-color: #CECFC7"></div>No Data<br>' +
-            '<div style="background-color: #2B3A67"></div>Groundwater<br>' +
-            '<div style="background-color: #89A7BD"></div>Purchased Surface Water<br>' +
-            '<div style="background-color: #66999B"></div>Surface Water<br>' +
-            '<div style="background-color: #B3AF8F"></div>Purchased Groundwater<br>' +
-            '<div style="background-color: #FFC482"></div>Groundwater Under Influence of Surface Water<br>' 
+            '<b>Fuente de Agua Primaria</b><br>'+
+            '<div style="background-color: #CECFC7"></div>Sin Datos<br>' +
+            '<div style="background-color: #2B3A67"></div>Agua Subterránea<br>' +
+            '<div style="background-color: #89A7BD"></div>Agua Superficial Comprada<br>' +
+            '<div style="background-color: #66999B"></div>Agua Superficial<br>' +
+            '<div style="background-color: #B3AF8F"></div>Agua Subterránea Comprada<br>' +
+            '<div style="background-color: #FFC482"></div>Agua Subterránea Bajo la<br>Influencia del Agua Superficial<br>' 
             
 
 
@@ -675,12 +675,12 @@ function createLegend(){
         }
         else if(fieldtomap == 'FiveMCL'){
             div.innerHTML =
-            '<b>Number of Water System Violations</b><br>'+
-            '<div style="background-color: #CECFC7"></div>No Data <br>' +
-            '<div style="background-color: #B4DCE4"></div>No Violations<br>' +
+            '<b>Infracciones del Sistema</b><br>'+
+            '<div style="background-color: #CECFC7"></div>Sin Datos<br>' +
+            '<div style="background-color: #B4DCE4"></div>Sin Violaciones<br>' +
             '<div style="background-color: #1f78b4"></div>1<br>' +
             '<div style="background-color: #F96900"></div>2-4<br>' +
-            '<div style="background-color: #E3170A"></div>5 or More<br>' 
+            '<div style="background-color: #E3170A"></div>5 o Mas<br>' 
              
             
 
@@ -861,35 +861,34 @@ function createInfoPanel(){
             this._div.innerHTML =`
             <p style="color:black;font-size:14px;line-height:1em;">
             <b>${properties['name']}</b>
-            <br><a href="${properties['URL']}"target="_blank"><div class="links">Water System Website</a></div>
-            <br>Water Systems are required to publish Consumer Confidence Reports that report water sources and water quality results for regulated contaminants. 
-            <br><a href="${properties['CCR']}"target"_blank"><div class="links">Consumer Confidence Report</a></div>
-            <br><b>Service Connections</b> ${properties['connections_Connections']}
-            <br><b>System Population:</b> ${properties['TableData_']}
-            <br><b>Median Household Income:</b> ${properties['Median']}
+            <br><a href="${properties['URL']}"target="_blank"><div class="links">Sitio del Sistema de Agua</a></div>
+            <br>Los sistemas de agua deben publicar informes de confianza del consumidor que informen sobre las fuentes de agua y los resultados de la calidad del agua para los contaminantes regulados. 
+            <br><a href="${properties['CCR']}"target"_blank"><div class="links">Informe de Confianza del Consumidor</a></div>
+            <br><b>Conexiones de Servicio:</b> ${properties['connections_Connections']}
+            <br><b>Población del Sistema:</b> ${properties['TableData_']}
+            <br><b>Ingreso Familiar Medio:</b> ${properties['Median']}
             <br>
-            <br><b>Governance Information</b>
-            <br>To learn more about governance types read the 
-            <br><a href="https://innovation.luskin.ucla.edu/" target="_blank"><div class="links">LA County Water System Performance Guide</a></div>
-            <br><b>Governance Type:</b> ${properties['GovType']}
-            <br><b>Governing Body:</b> ${properties['GoverningB']}
-            <br><b>How Leadership is Chosen:</b> ${properties['New_Mechan']}
-            <br><b> Average Compensation for Leadership:</b> ${properties['AvgComp']}
-            <br><b>Next Election Year:</b> ${properties['UpcomingEl']}
+            <br><b>Información de Gobernancia</b>
+            <br>Para obtener más información sobre los tipos de gobernanza, lea la
+            <br><a href="https://innovation.luskin.ucla.edu/" target="_blank"><div class="links">Guía de Rendimiento del Sistema de Agua del Condado de Los Ángeles</a></div>
+            <br><b>Tipo de Gobierno:</b> ${properties['GovType']}
+            <br><b>Órgano de Gobierno:</b> ${properties['GoverningB']}
+            <br><b>Cómo se Elige el Liderazgo:</b> ${properties['New_Mechan']}
+            <br><b>Compensación Promedio para el Liderazgo:</b> ${properties['AvgComp']}
+            <br><b>Próximo Año Electoral:</b> ${properties['UpcomingEl']}
             <br>
-            <br><b>Comparing Population and Leadership</b>
+            <br><b>Comparación de Población y Liderazgo</b>
             <table style="width:100%">
             <tr>
-            <th>Population</th>
-            <th>Leadership</th>
+            <th>Población</th>
+            <th>Liderazgo</th>
             </tr>
             <tr>
             <td><div id="apexchart"></td>
             <td><div id="Leader"></td>
             </tr>
             </table>
-            <br>To learn more about representation in
-            LA County water system leadership read the Luskin Center for Innovation's report on <a href="https://innovation.luskin.ucla.edu/wp-content/uploads/2021/06/Urban-Drinking-Water-Governing-Bodies.pdf" target="_blank"><div class="links">Urban Drinking Water Governing Bodies</a></div>
+            <br>Para obtener más información sobre representación en el liderazgo del sistema de agua del condado de Los Ángeles lea el informe del Luskin Center for Innovation sobre<a href="https://innovation.luskin.ucla.edu/wp-content/uploads/2021/06/Urban-Drinking-Water-Governing-Bodies.pdf" target="_blank"><div class="links">Órganos Rectores de agua Potable Urbana</a></div>
     
             </div></p>
             
@@ -899,35 +898,34 @@ function createInfoPanel(){
             this._div.innerHTML =`
             <p style="color:black;font-size:14px;line-height:1em;">
             <b>${properties['name']}</b>
-            <br><a href="${properties['URL']}"target="_blank"><div class="links">Water System Website</a></div>
-            <br>Water Systems are required to publish Consumer Confidence Reports that report water sources and water quality results for regulated contaminants. 
-            <br><a href="${properties['CCR']}"target"_blank"><div class="links">Consumer Confidence Report</a></div>
-            <br><b>Service Connections</b> ${properties['connections_Connections']}
-            <br><b>System Population:</b> ${properties['TableData_']}
-            <br><b>Median Household Income:</b> ${properties['Median']}
+            <br><a href="${properties['URL']}"target="_blank"><div class="links">Sitio del Sistema de Agua</a></div>
+            <br>Los sistemas de agua deben publicar informes de confianza del consumidor que informen sobre las fuentes de agua y los resultados de la calidad del agua para los contaminantes regulados.
+            <br><a href="${properties['CCR']}"target"_blank"><div class="links">Informe de Confianza del Consumidor</a></div>
+            <br><b>Conexiones de Servicio:</b> ${properties['connections_Connections']}
+            <br><b>Población del Sistema:</b> ${properties['TableData_']}
+            <br><b>Ingreso Familiar Medio:</b> ${properties['Median']}
             <br>
-            <br><b>Governance Information</b>
-            <br>To learn more about governance types read the 
-            <br><a href="https://innovation.luskin.ucla.edu/" target="_blank"><div class="links">LA County Water System Performance Guide</a></div>
-            <br><b>Governance Type:</b> ${properties['GovType']}
-            <br><b>Governing Body:</b> ${properties['GoverningB']}
-            <br><b>How Leadership is Chosen:</b> ${properties['New_Mechan']}
-            <br><b> Average Compensation for Leadership:</b> ${properties['AvgComp']}
-            <br><b>Next Election Year:</b> ${properties['UpcomingEl']}
+            <br><b>Información de Gobernancia</b>
+            <br>Para obtener más información sobre los tipos de gobernanza, lea la 
+            <br><a href="https://innovation.luskin.ucla.edu/" target="_blank"><div class="links">Guía de Rendimiento del Sistema de Agua del Condado de Los Ángeles</a></div>
+            <br><b>Tipo de Gobierno:</b> ${properties['GovType']}
+            <br><b>Órgano de Gobierno:</b> ${properties['GoverningB']}
+            <br><b>Cómo se Elige el Liderazgo:</b> ${properties['New_Mechan']}
+            <br><b>Compensación Promedio para el Liderazgo:</b> ${properties['AvgComp']}
+            <br><b>Próximo Año Electoral:</b> ${properties['UpcomingEl']}
             <br>
-            <br><b>Comparing Population and Leadership</b>
+            <br><b>Comparación de Población y Liderazgo</b>
             <table style="width:100%">
             <tr>
-            <th>Population</th>
-            <th>Leadership</th>
+            <th>Población</th>
+            <th>Liderazgo</th>
             </tr>
             <tr>
             <td><div id="apexchart"></td>
             <td><div id="Leader"></td>
             </tr>
             </table>
-            <br>To learn more about representation in
-            LA County water system leadership read the Luskin Center for Innovation's report on <a href="https://innovation.luskin.ucla.edu/wp-content/uploads/2021/06/Urban-Drinking-Water-Governing-Bodies.pdf" target="_blank"><div class="links">Urban Drinking Water Governing Bodies</a></div>
+            <br>Para obtener más información sobre representación en el liderazgo del sistema de agua del condado de Los Ángeles lea el informe del Luskin Center for Innovation sobre<a href="https://innovation.luskin.ucla.edu/wp-content/uploads/2021/06/Urban-Drinking-Water-Governing-Bodies.pdf" target="_blank"><div class="links">Órganos Rectores de agua Potable Urbana</a></div>
     
             </div></p>
             `}    
@@ -935,207 +933,204 @@ function createInfoPanel(){
                 this._div.innerHTML =`
                 <p style="color:black;font-size:14px;line-height:1em;">
                 <b>${properties['name']}</b>
-                <br><a href="${properties['URL']}"target="_blank"><div class="links">Water System Website</a></div>
-                <br>Water Systems are required to publish Consumer Confidence Reports that report water sources and water quality results for regulated contaminants. 
-                <br><a href="${properties['CCR']}"target"_blank"><div class="links">Consumer Confidence Report</a></div>
-                <br><b>Service Connections</b> ${properties['connections_Connections']}
-                <br><b>System Population:</b> ${properties['TableData_']}
-                <br><b>Median Household Income:</b> ${properties['Median']}
-                <br>
-                <br><b>Governance Information</b>
-                <br>To learn more about governance types read the 
-                <br><a href="https://innovation.luskin.ucla.edu/" target="_blank"><div class="links">LA County Water System Performance Guide</a></div>
-                <br><b>Governance Type:</b> ${properties['GovType']}
-                <br><b>Governing Body:</b> ${properties['GoverningB']}
-                <br><b>How Leadership is Chosen:</b> ${properties['New_Mechan']}
-                <br><b> Average Compensation for Leadership:</b> ${properties['AvgComp']}
-                <br><b>Next Election Year:</b> ${properties['UpcomingEl']}
-                <br>
-                <br><b>Comparing Population and Leadership</b>
-                <table style="width:100%">
-                <tr>
-                <th>Population</th>
-                <th>Leadership</th>
-                </tr>
-                <tr>
-                <td><div id="apexchart"></td>
-                <td><div id="Leader"></td>
-                </tr>
-                </table>
-                <br>To learn more about representation in
-                LA County water system leadership read the Luskin Center for Innovation's report on <a href="https://innovation.luskin.ucla.edu/wp-content/uploads/2021/06/Urban-Drinking-Water-Governing-Bodies.pdf" target="_blank"><div class="links">Urban Drinking Water Governing Bodies</a></div>
-        
-                </div></p>
-                ` }    
-
-       else if(fieldtomap == 'Service_Co'){
-        this._div.innerHTML =`
-            <p style="color:black;font-size:14px;line-height:1em;">
-            <b>${properties['name']}</b>
-            <br><a href="${properties['URL']}"target="_blank"><div class="links">Water System Website</a></div>
-            <br>Water Systems are required to publish Consumer Confidence Reports that report water sources and water quality results for regulated contaminants. 
-            <br><a href="${properties['CCR']}"target"_blank"><div class="links">Consumer Confidence Report</a></div>
-            <br><b>Service Connections</b> ${properties['connections_Connections']}
-            <br><b>System Population:</b> ${properties['TableData_']}
-            <br><b>Median Household Income:</b> ${properties['Median']}
+                <br><a href="${properties['URL']}"target="_blank"><div class="links">Sitio del Sistema de Agua</a></div>
+            <br>Los sistemas de agua deben publicar informes de confianza del consumidor que informen sobre las fuentes de agua y los resultados de la calidad del agua para los contaminantes regulados.
+            <br><a href="${properties['CCR']}"target"_blank"><div class="links">Informe de Confianza del Consumidor</a></div>
+            <br><b>Conexiones de Servicio:</b> ${properties['connections_Connections']}
+            <br><b>Población del Sistema:</b> ${properties['TableData_']}
+            <br><b>Ingreso Familiar Medio:</b> ${properties['Median']}
             <br>
-            <br><b>Governance Information</b>
-            <br>To learn more about governance types read the 
-            <br><a href="https://innovation.luskin.ucla.edu/" target="_blank"><div class="links">LA County Water System Performance Guide</a></div>
-            <br><b>Governance Type:</b> ${properties['GovType']}
-            <br><b>Governing Body:</b> ${properties['GoverningB']}
-            <br><b>How Leadership is Chosen:</b> ${properties['New_Mechan']}
-            <br><b> Average Compensation for Leadership:</b> ${properties['AvgComp']}
-            <br><b>Next Election Year:</b> ${properties['UpcomingEl']}
+            <br><b>Información de Gobernancia</b>
+            <br>Para obtener más información sobre los tipos de gobernanza, lea la 
+            <br><a href="https://innovation.luskin.ucla.edu/" target="_blank"><div class="links">Guía de Rendimiento del Sistema de Agua del Condado de Los Ángeles</a></div>
+            <br><b>Tipo de Gobierno:</b> ${properties['GovType']}
+            <br><b>Órgano de Gobierno:</b> ${properties['GoverningB']}
+            <br><b>Cómo se Elige el Liderazgo:</b> ${properties['New_Mechan']}
+            <br><b>Compensación Promedio para el Liderazgo:</b> ${properties['AvgComp']}
+            <br><b>Próximo Año Electoral:</b> ${properties['UpcomingEl']}
             <br>
-            <br><b>Comparing Population and Leadership</b>
+            <br><b>Comparación de Población y Liderazgo</b>
             <table style="width:100%">
             <tr>
-            <th>Population</th>
-            <th>Leadership</th>
+            <th>Población</th>
+            <th>Liderazgo</th>
             </tr>
             <tr>
             <td><div id="apexchart"></td>
             <td><div id="Leader"></td>
             </tr>
             </table>
-            <br>To learn more about representation in
-            LA County water system leadership read the Luskin Center for Innovation's report on <a href="https://innovation.luskin.ucla.edu/wp-content/uploads/2021/06/Urban-Drinking-Water-Governing-Bodies.pdf" target="_blank"><div class="links">Urban Drinking Water Governing Bodies</a></div>
-    
+            <br>Para obtener más información sobre representación en el liderazgo del sistema de agua del condado de Los Ángeles lea el informe del Luskin Center for Innovation sobre<a href="https://innovation.luskin.ucla.edu/wp-content/uploads/2021/06/Urban-Drinking-Water-Governing-Bodies.pdf" target="_blank"><div class="links">Órganos Rectores de agua Potable Urbana</a></div>
+        
             </div></p>
-                
-                ` }    
+            ` }    
+
+       else if(fieldtomap == 'Service_Co'){
+        this._div.innerHTML =`
+            <p style="color:black;font-size:14px;line-height:1em;">
+            <b>${properties['name']}</b>
+            <br><a href="${properties['URL']}"target="_blank"><div class="links">Sitio del Sistema de Agua</a></div>
+            <br>Los sistemas de agua deben publicar informes de confianza del consumidor que informen sobre las fuentes de agua y los resultados de la calidad del agua para los contaminantes regulados.
+            <br><a href="${properties['CCR']}"target"_blank"><div class="links">Informe de Confianza del Consumidor</a></div>
+            <br><b>Conexiones de Servicio:</b> ${properties['connections_Connections']}
+            <br><b>Población del Sistema:</b> ${properties['TableData_']}
+            <br><b>Ingreso Familiar Medio:</b> ${properties['Median']}
+            <br>
+            <br><b>Información de Gobernancia</b>
+            <br>Para obtener más información sobre los tipos de gobernanza, lea la 
+            <br><a href="https://innovation.luskin.ucla.edu/" target="_blank"><div class="links">Guía de Rendimiento del Sistema de Agua del Condado de Los Ángeles</a></div>
+            <br><b>Tipo de Gobierno:</b> ${properties['GovType']}
+            <br><b>Órgano de Gobierno:</b> ${properties['GoverningB']}
+            <br><b>Cómo se Elige el Liderazgo:</b> ${properties['New_Mechan']}
+            <br><b>Compensación Promedio para el Liderazgo:</b> ${properties['AvgComp']}
+            <br><b>Próximo Año Electoral:</b> ${properties['UpcomingEl']}
+            <br>
+            <br><b>Comparación de Población y Liderazgo</b>
+            <table style="width:100%">
+            <tr>
+            <th>Población</th>
+            <th>Liderazgo</th>
+            </tr>
+            <tr>
+            <td><div id="apexchart"></td>
+            <td><div id="Leader"></td>
+            </tr>
+            </table>
+            <br>Para obtener más información sobre representación en el liderazgo del sistema de agua del condado de Los Ángeles lea el informe del Luskin Center for Innovation sobre<a href="https://innovation.luskin.ucla.edu/wp-content/uploads/2021/06/Urban-Drinking-Water-Governing-Bodies.pdf" target="_blank"><div class="links">Órganos Rectores de agua Potable Urbana</a></div>
+    
+            </div></p> 
+            ` }    
         else if(fieldtomap == 'WaterBill'){
             this._div.innerHTML =`
             <p style="color:black;font-size:14px;line-height:1em;">
             <b>${properties['name']}</b>
-            <br><a href="${properties['URL']}"target="_blank"><div class="links">Water System Website</a></div>
-            <br>Water Systems are required to publish Consumer Confidence Reports that report water sources and water quality results for regulated contaminants. 
-            <br><a href="${properties['CCR']}"target"_blank"><div class="links">Consumer Confidence Report</a></div>
-            <br><b>Service Connections</b> ${properties['connections_Connections']}
-            <br><b>System Population:</b> ${properties['TableData_']}
-            <br><b>Median Household Income:</b> ${properties['Median']}
+            <br><a href="${properties['URL']}"target="_blank"><div class="links">Sitio del Sistema de Agua</a></div>
+            <br>Los sistemas de agua deben publicar informes de confianza del consumidor que informen sobre las fuentes de agua y los resultados de la calidad del agua para los contaminantes regulados. 
+            <br><a href="${properties['CCR']}"target"_blank"><div class="links">Informe de Confianza del Consumidor</a></div>
+            <br><b>Conexiones de Servicio:</b> ${properties['connections_Connections']}
+            <br><b>Población del Sistema:</b> ${properties['TableData_']}
+            <br><b>Ingreso Familiar Medio:</b> ${properties['Median']}
             <br>
-                <br><b>Water Bill Information</b>
+                <br><b>Información de la Factura de Agua</b>
                 <br>
-                <br><b>Average Water Bill:</b> ${properties['Bill_Panel']}
+                <br><b>Factura Media de Agua:</b> ${properties['Bill_Panel']}
                 <br>
-                <br>My water bill is <b>${properties['OverUnder']}% ${properties['OU']}</b> the average bill in
-                <br> Los Angeles County.
+                <br>Mi factura de agua es <b>${properties['OverUnder']}% ${properties['OU']}</b> la factura promedio
+                <br> en el condado de Los Ángeles.
                 <br>
-                <br>It takes <b>${properties['HMW']} hours of minimum wage</b>
-                <br> to pay my water bill.
+                <br>Se necesitan <b>${properties['HMW']} horas de salario mínimo</b>
+                <br> para pagar mi factura de agua.
                 </p> 
  `}     
         else if(fieldtomap == 'HMW'){
             this._div.innerHTML =`
             <p style="color:black;font-size:14px;line-height:1em;">
             <b>${properties['name']}</b>
-            <br><a href="${properties['URL']}"target="_blank"><div class="links">Water System Website</a></div>
-            <br>Water Systems are required to publish Consumer Confidence Reports that report water sources and water quality results for regulated contaminants. 
-            <br><a href="${properties['CCR']}"target"_blank"><div class="links">Consumer Confidence Report</a></div>
-            <br><b>Service Connections</b> ${properties['connections_Connections']}
-            <br><b>System Population:</b> ${properties['TableData_']}
-            <br><b>Median Household Income:</b> ${properties['Median']}
+            <br><a href="${properties['URL']}"target="_blank"><div class="links">Sitio del Sistema de Agua</a></div>
+            <br>Los sistemas de agua deben publicar informes de confianza del consumidor que informen sobre las fuentes de agua y los resultados de la calidad del agua para los contaminantes regulados. 
+            <br><a href="${properties['CCR']}"target"_blank"><div class="links">Informe de Confianza del Consumidor</a></div>
+            <br><b>Conexiones de Servicio:</b> ${properties['connections_Connections']}
+            <br><b>Población del Sistema:</b> ${properties['TableData_']}
+            <br><b>Ingreso Familiar Medio:</b> ${properties['Median']}
             <br>
-                <br><b>Water Bill Information</b>
+                <br><b>Información de la Factura de Agua</b>
                 <br>
-                <br><b>Average Water Bill:</b> ${properties['Bill_Panel']}
+                <br><b>Factura Media de Agua:</b> ${properties['Bill_Panel']}
                 <br>
-                <br>My water bill is <b>${properties['OverUnder']}% ${properties['OU']}</b> the average bill in
-                <br> Los Angeles County.
+                <br>Mi factura de agua es <b>${properties['OverUnder']}% ${properties['OU']}</b> la factura promedio
+                <br> en el condado de Los Ángeles.
                 <br>
-                <br>It takes <b>${properties['HMW']} hours of minimum wage</b>
-                <br> to pay my water bill.
+                <br>Se necesitan <b>${properties['HMW']} horas de salario mínimo</b>
+                <br> para pagar mi factura de agua.
                 </p> 
                  `}  
         else if(fieldtomap == 'RiskCode'){
             this._div.innerHTML =`
             <p style="color:black;font-size:14px;line-height:1em;">
             <b>${properties['name']}</b>
-            <br><a href="${properties['URL']}"target="_blank"><div class="links">Water System Website</a></div>
-            <br>Water Systems are required to publish Consumer Confidence Reports that report water sources and water quality results for regulated contaminants. 
-            <br><a href="${properties['CCR']}"target"_blank"><div class="links">Consumer Confidence Report</a></div>
-            <br><b>Service Connections</b> ${properties['connectiond_Connections']}
-            <br><b>System Population:</b> ${properties['TableData_']}
-            <br><b>Median Household Income:</b> ${properties['Median']}
+            <br><a href="${properties['URL']}"target="_blank"><div class="links">Sitio del Sistema de Agua</a></div>
+            <br>Los sistemas de agua deben publicar informes de confianza del consumidor que informen sobre las fuentes de agua y los resultados de la calidad del agua para los contaminantes regulados. 
+            <br><a href="${properties['CCR']}"target"_blank"><div class="links">Informe de Confianza del Consumidor</a></div>
+            <br><b>Conexiones de Servicio:</b> ${properties['connectiond_Connections']}
+            <br><b>Población del Sistema:</b> ${properties['TableData_']}
+            <br><b>Ingreso Familiar Medio:</b> ${properties['Median']}
             <br>
-                <br><b>Water System Performance</b>
+                <br><b>Rendimiento del Sistema</b>
                 <br>
-                <br><b>Primary water source:</b> ${properties['PWS']}
+                <br><b>Fuente Primaria de Agua:</b> ${properties['PWS']}
                 <br>
-                <br><b>Required System Operator Level:</b> ${properties['ReqOp']}
-                <br><b>Current System Operator Level:</b> ${properties['HighestOp']}
-                <br>This system had <b> ${properties['FiveMCL']} health violations </b> from 2014-2018.
+                <br><b>Nivel de Operador de Sistema Requerido:</b> ${properties['ReqOp']}
+                <br><b>Nivel Actual de Operador del Sistema:</b> ${properties['HighestOp']}
+                <br>Este sistema tuvo <b> ${properties['FiveMCL']} violaciones de salud</b> de 2014-2018.
                 <br>
-                <br><b>Risk Score:</b> ${properties['RiskScore']}
-                <br><a href="https://innovation.luskin.ucla.edu/wp-content/uploads/2021/07/LA-County-Small-Water-System-Risk-Assessment.pdf" target="_blank"><div class="links">Read the LA County Risk Assessment Here</a></div>  
+                <br><b>Calificación de Riesgo:</b> ${properties['RiskScore']}
+                <br><a href="https://innovation.luskin.ucla.edu/wp-content/uploads/2021/07/LA-County-Small-Water-System-Risk-Assessment.pdf" target="_blank"><div class="links">Lea la Evaluación de Riesgos del Condado de Los Ángeles aquí. </a></div>  
                 </p>`}  
         else if(fieldtomap == 'FiveMCL'){
             this._div.innerHTML =`
             <p style="color:black;font-size:14px;line-height:1em;">
             <b>${properties['name']}</b>
-            <br><a href="${properties['URL']}"target="_blank"><div class="links">Water System Website</a></div>
-            <br>Water Systems are required to publish Consumer Confidence Reports that report water sources and water quality results for regulated contaminants. 
-            <br><a href="${properties['CCR']}"target"_blank"><div class="links">Consumer Confidence Report</a></div>
-            <br><b>Service Connections</b> ${properties['connections_Connections']}
-            <br><b>System Population:</b> ${properties['TableData_']}
-            <br><b>Median Household Income:</b> ${properties['Median']}
+            <br><a href="${properties['URL']}"target="_blank"><div class="links">Sitio del Sistema de Agua</a></div>
+            <br>Los sistemas de agua deben publicar informes de confianza del consumidor que informen sobre las fuentes de agua y los resultados de la calidad del agua para los contaminantes regulados. 
+            <br><a href="${properties['CCR']}"target"_blank"><div class="links">Informe de Confianza del Consumidor</a></div>
+            <br><b>Conexiones de Servicio:</b> ${properties['connectiond_Connections']}
+            <br><b>Población del Sistema:</b> ${properties['TableData_']}
+            <br><b>Ingreso Familiar Medio:</b> ${properties['Median']}
             <br>
-                <br><b>Water System Performance</b>
+                <br><b>Rendimiento del Sistema</b>
                 <br>
-                <br><b>Primary water source:</b> ${properties['PWS']}
+                <br><b>Fuente Primaria de Agua:</b> ${properties['PWS']}
                 <br>
-                <br><b>Required System Operator Level:</b> ${properties['ReqOp']}
-                <br><b>Current System Operator Level:</b> ${properties['HighestOp']}
-                <br>This system had <b> ${properties['FiveMCL']} health violations </b> from 2014-2018.
+                <br><b>Nivel de Operador de Sistema Requerido:</b> ${properties['ReqOp']}
+                <br><b>Nivel Actual de Operador del Sistema:</b> ${properties['HighestOp']}
+                <br>Este sistema tuvo <b> ${properties['FiveMCL']} violaciones de salud</b> de 2014-2018.
                 <br>
-                <br><b>Risk Score:</b> ${properties['RiskScore']}
-                <br><a href="https://innovation.luskin.ucla.edu/wp-content/uploads/2021/07/LA-County-Small-Water-System-Risk-Assessment.pdf" target="_blank"><div class="links">Read the LA County Risk Assessment Here</a></div>  
-                </p>`}   
+                <br><b>Calificación de Riesgo:</b> ${properties['RiskScore']}
+                <br><a href="https://innovation.luskin.ucla.edu/wp-content/uploads/2021/07/LA-County-Small-Water-System-Risk-Assessment.pdf" target="_blank"><div class="links">Lea la Evaluación de Riesgos del Condado de Los Ángeles aquí. </a></div>  
+                </p>`}    
         else if(fieldtomap == 'OperatorBe'){
             this._div.innerHTML =`
             <p style="color:black;font-size:14px;line-height:1em;">
             <b>${properties['name']}</b>
-            <br><a href="${properties['URL']}"target="_blank"><div class="links">Water System Website</a></div>
-            <br>Water Systems are required to publish Consumer Confidence Reports that report water sources and water quality results for regulated contaminants. 
-            <br><a href="${properties['CCR']}"target"_blank"><div class="links">Consumer Confidence Report</a></div>
-            <br><b>Service Connections</b> ${properties['connections_Connections']}
-            <br><b>System Population:</b> ${properties['TableData_']}
-            <br><b>Median Household Income:</b> ${properties['Median']}
+            <br><a href="${properties['URL']}"target="_blank"><div class="links">Sitio del Sistema de Agua</a></div>
+            <br>Los sistemas de agua deben publicar informes de confianza del consumidor que informen sobre las fuentes de agua y los resultados de la calidad del agua para los contaminantes regulados. 
+            <br><a href="${properties['CCR']}"target"_blank"><div class="links">Informe de Confianza del Consumidor</a></div>
+            <br><b>Conexiones de Servicio:</b> ${properties['connectiond_Connections']}
+            <br><b>Población del Sistema:</b> ${properties['TableData_']}
+            <br><b>Ingreso Familiar Medio:</b> ${properties['Median']}
             <br>
-                <br><b>Water System Performance</b>
+                <br><b>Rendimiento del Sistema</b>
                 <br>
-                <br><b>Primary water source:</b> ${properties['PWS']}
+                <br><b>Fuente Primaria de Agua:</b> ${properties['PWS']}
                 <br>
-                <br><b>Required System Operator Level:</b> ${properties['ReqOp']}
-                <br><b>Current System Operator Level:</b> ${properties['HighestOp']}
-                <br>This system had <b> ${properties['FiveMCL']} health violations </b> from 2014-2018.
+                <br><b>Nivel de Operador de Sistema Requerido:</b> ${properties['ReqOp']}
+                <br><b>Nivel Actual de Operador del Sistema:</b> ${properties['HighestOp']}
+                <br>Este sistema tuvo <b> ${properties['FiveMCL']} violaciones de salud</b> de 2014-2018.
                 <br>
-                <br><b>Risk Score:</b> ${properties['RiskScore']}
-                <br><a href="https://innovation.luskin.ucla.edu/wp-content/uploads/2021/07/LA-County-Small-Water-System-Risk-Assessment.pdf" target="_blank"><div class="links">Read the LA County Risk Assessment Here</a></div>  
-                </p>`}   
+                <br><b>Calificación de Riesgo:</b> ${properties['RiskScore']}
+                <br><a href="https://innovation.luskin.ucla.edu/wp-content/uploads/2021/07/LA-County-Small-Water-System-Risk-Assessment.pdf" target="_blank"><div class="links">Lea la Evaluación de Riesgos del Condado de Los Ángeles aquí. </a></div>  
+                </p>`}  
         else if(fieldtomap == 'PWS_Code'){
             this._div.innerHTML =`
             <p style="color:black;font-size:14px;line-height:1em;">
             <b>${properties['name']}</b>
-            <br><a href="${properties['URL']}"target="_blank"><div class="links">Water System Website</a></div>
-            <br>Water Systems are required to publish Consumer Confidence Reports that report water sources and water quality results for regulated contaminants. 
-            <br><a href="${properties['CCR']}"target"_blank"><div class="links">Consumer Confidence Report</a></div>
-            <br><b>Service Connections</b> ${properties['connections_Connections']}
-            <br><b>System Population:</b> ${properties['TableData_']}
-            <br><b>Median Household Income:</b> ${properties['Median']}
+            <br><a href="${properties['URL']}"target="_blank"><div class="links">Sitio del Sistema de Agua</a></div>
+            <br>Los sistemas de agua deben publicar informes de confianza del consumidor que informen sobre las fuentes de agua y los resultados de la calidad del agua para los contaminantes regulados. 
+            <br><a href="${properties['CCR']}"target"_blank"><div class="links">Informe de Confianza del Consumidor</a></div>
+            <br><b>Conexiones de Servicio:</b> ${properties['connectiond_Connections']}
+            <br><b>Población del Sistema:</b> ${properties['TableData_']}
+            <br><b>Ingreso Familiar Medio:</b> ${properties['Median']}
             <br>
-                <br><b>Water System Performance</b>
+                <br><b>Rendimiento del Sistema</b>
                 <br>
-                <br><b>Primary water source:</b> ${properties['PWS']}
+                <br><b>Fuente Primaria de Agua:</b> ${properties['PWS']}
                 <br>
-                <br><b>Required System Operator Level:</b> ${properties['ReqOp']}
-                <br><b>Current System Operator Level:</b> ${properties['HighestOp']}
-                <br>This system had <b> ${properties['FiveMCL']} health violations </b> from 2014-2018.
+                <br><b>Nivel de Operador de Sistema Requerido:</b> ${properties['ReqOp']}
+                <br><b>Nivel Actual de Operador del Sistema:</b> ${properties['HighestOp']}
+                <br>Este sistema tuvo <b> ${properties['FiveMCL']} violaciones de salud</b> de 2014-2018.
                 <br>
-                <br><b>Risk Score:</b> ${properties['RiskScore']}
-                <br><a href="https://innovation.luskin.ucla.edu/wp-content/uploads/2021/07/LA-County-Small-Water-System-Risk-Assessment.pdf" target="_blank"><div class="links">Read the LA County Risk Assessment Here</a></div>  
+                <br><b>Calificación de Riesgo:</b> ${properties['RiskScore']}
+                <br><a href="https://innovation.luskin.ucla.edu/wp-content/uploads/2021/07/LA-County-Small-Water-System-Risk-Assessment.pdf" target="_blank"><div class="links">Lea la Evaluación de Riesgos del Condado de Los Ángeles aquí. </a></div>  
                 </p>`}  
 //Spanish Info Box Code Here 
                                             if(fieldtomap == 'SpanGovernanceCode'){
@@ -1254,7 +1249,7 @@ function createInfoPanel(){
         // if feature is not highlighted
         else
         {
-            this._div.innerHTML = 'Click on a Water System<br>'
+            this._div.innerHTML = 'Haga clic en una Sistema de Agua<br>'
                                    
         }
     };
@@ -1429,14 +1424,14 @@ function createDashboard(properties){
    ]
    // data fields
    let fields = [
-       'Hispanic',
-       'White',
-       'Black',
-       'Asian',
-       'American Indian and Alaskan Native',
-       'Native Hawaiian and other Pacific Islander',
-       'Other Race',
-       'Two or more Race',
+       'Hispano',
+       'Blanco',
+       'Negro',
+       'Asiático',
+       'Indigena Americana y Nativa de Alaska',
+       'Nativo de Hawái y Otras Islas del Pacífico',
+       'Otra Raza',
+       'Dos o Mas Razas',
    ]
 console.log(data)
 
