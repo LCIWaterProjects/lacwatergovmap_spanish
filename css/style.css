@@ -2,6 +2,7 @@ body,html {
     margin:0;
     height:100%;
     width:100%;
+    overflow: clip;
 }
 
 #map {
@@ -80,8 +81,9 @@ a{
     color: #444;
     grid-area: sidebar;
     padding:10px;
+    width: 100%;
     background-color: #ffffff;
-    /*overflow:scroll; /* allows the sidebar to overflow with a scrollbar */
+    overflow:scroll; /* allows the sidebar to overflow with a scrollbar */
 }
 
 .sidebar-title {
@@ -395,7 +397,7 @@ z-index: 9999;
                 -ms-transform: translate(-50%,-50%);}
       
 .links{
-    font-size: 18px;
+    font-size: 25px;
   line-height: 1em;
    
  
