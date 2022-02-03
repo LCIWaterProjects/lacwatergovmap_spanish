@@ -864,7 +864,7 @@ function createInfoPanel(){
             <br><a href="${properties['URL']}"target="_blank"><div class="links">Water System Website</a></div>
             <br>Water Systems are required to publish Consumer Confidence Reports that report water sources and water quality results for regulated contaminants. 
             <br><a href="${properties['CCR']}"target"_blank"><div class="links">Consumer Confidence Report</a></div>
-            <br><b>Service Connections</b> ${properties['connections_Connections']}
+            <br><b>Service Connections:</b> ${properties['connections_Connections']}
             <br><b>System Population:</b> ${properties['TableData_']}
             <br><b>Median Household Income:</b> ${properties['Median']}
             <br>
@@ -902,7 +902,7 @@ function createInfoPanel(){
             <br><a href="${properties['URL']}"target="_blank"><div class="links">Water System Website</a></div>
             <br>Water Systems are required to publish Consumer Confidence Reports that report water sources and water quality results for regulated contaminants. 
             <br><a href="${properties['CCR']}"target"_blank"><div class="links">Consumer Confidence Report</a></div>
-            <br><b>Service Connections</b> ${properties['connections_Connections']}
+            <br><b>Service Connections:</b> ${properties['connections_Connections']}
             <br><b>System Population:</b> ${properties['TableData_']}
             <br><b>Median Household Income:</b> ${properties['Median']}
             <br>
@@ -938,7 +938,7 @@ function createInfoPanel(){
                 <br><a href="${properties['URL']}"target="_blank"><div class="links">Water System Website</a></div>
                 <br>Water Systems are required to publish Consumer Confidence Reports that report water sources and water quality results for regulated contaminants. 
                 <br><a href="${properties['CCR']}"target"_blank"><div class="links">Consumer Confidence Report</a></div>
-                <br><b>Service Connections</b> ${properties['connections_Connections']}
+                <br><b>Service Connections:</b> ${properties['connections_Connections']}
                 <br><b>System Population:</b> ${properties['TableData_']}
                 <br><b>Median Household Income:</b> ${properties['Median']}
                 <br>
@@ -975,7 +975,7 @@ function createInfoPanel(){
             <br><a href="${properties['URL']}"target="_blank"><div class="links">Water System Website</a></div>
             <br>Water Systems are required to publish Consumer Confidence Reports that report water sources and water quality results for regulated contaminants. 
             <br><a href="${properties['CCR']}"target"_blank"><div class="links">Consumer Confidence Report</a></div>
-            <br><b>Service Connections</b> ${properties['connections_Connections']}
+            <br><b>Service Connections:</b> ${properties['connections_Connections']}
             <br><b>System Population:</b> ${properties['TableData_']}
             <br><b>Median Household Income:</b> ${properties['Median']}
             <br>
@@ -1012,7 +1012,7 @@ function createInfoPanel(){
             <br><a href="${properties['URL']}"target="_blank"><div class="links">Water System Website</a></div>
             <br>Water Systems are required to publish Consumer Confidence Reports that report water sources and water quality results for regulated contaminants. 
             <br><a href="${properties['CCR']}"target"_blank"><div class="links">Consumer Confidence Report</a></div>
-            <br><b>Service Connections</b> ${properties['connections_Connections']}
+            <br><b>Service Connections:</b> ${properties['connections_Connections']}
             <br><b>System Population:</b> ${properties['TableData_']}
             <br><b>Median Household Income:</b> ${properties['Median']}
             <br>
@@ -1034,7 +1034,7 @@ function createInfoPanel(){
             <br><a href="${properties['URL']}"target="_blank"><div class="links">Water System Website</a></div>
             <br>Water Systems are required to publish Consumer Confidence Reports that report water sources and water quality results for regulated contaminants. 
             <br><a href="${properties['CCR']}"target"_blank"><div class="links">Consumer Confidence Report</a></div>
-            <br><b>Service Connections</b> ${properties['connections_Connections']}
+            <br><b>Service Connections:</b> ${properties['connections_Connections']}
             <br><b>System Population:</b> ${properties['TableData_']}
             <br><b>Median Household Income:</b> ${properties['Median']}
             <br>
@@ -1056,7 +1056,7 @@ function createInfoPanel(){
             <br><a href="${properties['URL']}"target="_blank"><div class="links">Water System Website</a></div>
             <br>Water Systems are required to publish Consumer Confidence Reports that report water sources and water quality results for regulated contaminants. 
             <br><a href="${properties['CCR']}"target"_blank"><div class="links">Consumer Confidence Report</a></div>
-            <br><b>Service Connections</b> ${properties['connectiond_Connections']}
+            <br><b>Service Connections:</b> ${properties['connectiond_Connections']}
             <br><b>System Population:</b> ${properties['TableData_']}
             <br><b>Median Household Income:</b> ${properties['Median']}
             <br>
@@ -1078,7 +1078,7 @@ function createInfoPanel(){
             <br><a href="${properties['URL']}"target="_blank"><div class="links">Water System Website</a></div>
             <br>Water Systems are required to publish Consumer Confidence Reports that report water sources and water quality results for regulated contaminants. 
             <br><a href="${properties['CCR']}"target"_blank"><div class="links">Consumer Confidence Report</a></div>
-            <br><b>Service Connections</b> ${properties['connections_Connections']}
+            <br><b>Service Connections:</b> ${properties['connections_Connections']}
             <br><b>System Population:</b> ${properties['TableData_']}
             <br><b>Median Household Income:</b> ${properties['Median']}
             <br>
@@ -1100,7 +1100,7 @@ function createInfoPanel(){
             <br><a href="${properties['URL']}"target="_blank"><div class="links">Water System Website</a></div>
             <br>Water Systems are required to publish Consumer Confidence Reports that report water sources and water quality results for regulated contaminants. 
             <br><a href="${properties['CCR']}"target"_blank"><div class="links">Consumer Confidence Report</a></div>
-            <br><b>Service Connections</b> ${properties['connections_Connections']}
+            <br><b>Service Connections:</b> ${properties['connections_Connections']}
             <br><b>System Population:</b> ${properties['TableData_']}
             <br><b>Median Household Income:</b> ${properties['Median']}
             <br>
@@ -1122,7 +1122,7 @@ function createInfoPanel(){
             <br><a href="${properties['URL']}"target="_blank"><div class="links">Water System Website</a></div>
             <br>Water Systems are required to publish Consumer Confidence Reports that report water sources and water quality results for regulated contaminants. 
             <br><a href="${properties['CCR']}"target"_blank"><div class="links">Consumer Confidence Report</a></div>
-            <br><b>Service Connections</b> ${properties['connections_Connections']}
+            <br><b>Service Connections:</b> ${properties['connections_Connections']}
             <br><b>System Population:</b> ${properties['TableData_']}
             <br><b>Median Household Income:</b> ${properties['Median']}
             <br>
