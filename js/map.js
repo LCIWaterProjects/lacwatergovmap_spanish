@@ -5,7 +5,7 @@ let lat = 34;
 let lon = -118;
 let zl = 9;
 
-let geojsonPath = 'https://raw.githubusercontent.com/LCIWaterProjects/lacwatergovmap_spanish/main/data/spanishdata.geojson';
+let geojsonPath = 'https://raw.githubusercontent.com/LCIWaterProjects/lacwatergovmap_spanish/main/data/SpanUpdate.geojson';
 let geojson_data;
 let geojson_layer;
 
@@ -864,7 +864,7 @@ function createInfoPanel(){
             <br><a href="${properties['URL']}"target="_blank"><div class="links">Sitio del Sistema de Agua</a></div>
             <br>Los sistemas de agua deben publicar informes de confianza del consumidor que informen sobre las fuentes de agua y los resultados de la calidad del agua para los contaminantes regulados. 
             <br><a href="${properties['CCR']}"target"_blank"><div class="links">Informe de Confianza del Consumidor</a></div>
-            <br><b>Conexiones de Servicio:</b> ${properties['PanelConnect_PanelConnections']}
+            <br><b>Conexiones de Servicio:</b> ${properties['connections_Connections']}
             <br><b>Población del Sistema:</b> ${properties['TableData_']}
             <br><b>Ingreso Familiar Medio:</b> ${properties['Median']}
             <br>
@@ -901,7 +901,7 @@ function createInfoPanel(){
             <br><a href="${properties['URL']}"target="_blank"><div class="links">Sitio del Sistema de Agua</a></div>
             <br>Los sistemas de agua deben publicar informes de confianza del consumidor que informen sobre las fuentes de agua y los resultados de la calidad del agua para los contaminantes regulados.
             <br><a href="${properties['CCR']}"target"_blank"><div class="links">Informe de Confianza del Consumidor</a></div>
-            <br><b>Conexiones de Servicio:</b> ${properties['PanelConnect_PanelConnections']}
+            <br><b>Conexiones de Servicio:</b> ${properties['connections_Connections']}
             <br><b>Población del Sistema:</b> ${properties['TableData_']}
             <br><b>Ingreso Familiar Medio:</b> ${properties['Median']}
             <br>
@@ -936,7 +936,7 @@ function createInfoPanel(){
                 <br><a href="${properties['URL']}"target="_blank"><div class="links">Sitio del Sistema de Agua</a></div>
             <br>Los sistemas de agua deben publicar informes de confianza del consumidor que informen sobre las fuentes de agua y los resultados de la calidad del agua para los contaminantes regulados.
             <br><a href="${properties['CCR']}"target"_blank"><div class="links">Informe de Confianza del Consumidor</a></div>
-            <br><b>Conexiones de Servicio:</b> ${properties['PanelConnect_PanelConnections']}
+            <br><b>Conexiones de Servicio:</b> ${properties['connections_Connections']}
             <br><b>Población del Sistema:</b> ${properties['TableData_']}
             <br><b>Ingreso Familiar Medio:</b> ${properties['Median']}
             <br>
@@ -972,7 +972,7 @@ function createInfoPanel(){
             <br><a href="${properties['URL']}"target="_blank"><div class="links">Sitio del Sistema de Agua</a></div>
             <br>Los sistemas de agua deben publicar informes de confianza del consumidor que informen sobre las fuentes de agua y los resultados de la calidad del agua para los contaminantes regulados.
             <br><a href="${properties['CCR']}"target"_blank"><div class="links">Informe de Confianza del Consumidor</a></div>
-            <br><b>Conexiones de Servicio:</b> ${properties['PanelConnect_PanelConnections']}
+            <br><b>Conexiones de Servicio:</b> ${properties['connections_Connections']}
             <br><b>Población del Sistema:</b> ${properties['TableData_']}
             <br><b>Ingreso Familiar Medio:</b> ${properties['Median']}
             <br>
@@ -1007,7 +1007,7 @@ function createInfoPanel(){
             <br><a href="${properties['URL']}"target="_blank"><div class="links">Sitio del Sistema de Agua</a></div>
             <br>Los sistemas de agua deben publicar informes de confianza del consumidor que informen sobre las fuentes de agua y los resultados de la calidad del agua para los contaminantes regulados. 
             <br><a href="${properties['CCR']}"target"_blank"><div class="links">Informe de Confianza del Consumidor</a></div>
-            <br><b>Conexiones de Servicio:</b> ${properties['PanelConnect_PanelConnections']}
+            <br><b>Conexiones de Servicio:</b> ${properties['connections_Connections']}
             <br><b>Población del Sistema:</b> ${properties['TableData_']}
             <br><b>Ingreso Familiar Medio:</b> ${properties['Median']}
             <br>
@@ -1029,7 +1029,7 @@ function createInfoPanel(){
             <br><a href="${properties['URL']}"target="_blank"><div class="links">Sitio del Sistema de Agua</a></div>
             <br>Los sistemas de agua deben publicar informes de confianza del consumidor que informen sobre las fuentes de agua y los resultados de la calidad del agua para los contaminantes regulados. 
             <br><a href="${properties['CCR']}"target"_blank"><div class="links">Informe de Confianza del Consumidor</a></div>
-            <br><b>Conexiones de Servicio:</b> ${properties['PanelConnect_PanelConnections']}
+            <br><b>Conexiones de Servicio:</b> ${properties['connections_Connections']}
             <br><b>Población del Sistema:</b> ${properties['TableData_']}
             <br><b>Ingreso Familiar Medio:</b> ${properties['Median']}
             <br>
@@ -1051,7 +1051,7 @@ function createInfoPanel(){
             <br><a href="${properties['URL']}"target="_blank"><div class="links">Sitio del Sistema de Agua</a></div>
             <br>Los sistemas de agua deben publicar informes de confianza del consumidor que informen sobre las fuentes de agua y los resultados de la calidad del agua para los contaminantes regulados. 
             <br><a href="${properties['CCR']}"target"_blank"><div class="links">Informe de Confianza del Consumidor</a></div>
-            <br><b>Conexiones de Servicio:</b> ${properties['PanelConnect_PanelConnections']}
+            <br><b>Conexiones de Servicio:</b> ${properties['connections_Connections']}
             <br><b>Población del Sistema:</b> ${properties['TableData_']}
             <br><b>Ingreso Familiar Medio:</b> ${properties['Median']}
             <br>
@@ -1073,7 +1073,7 @@ function createInfoPanel(){
             <br><a href="${properties['URL']}"target="_blank"><div class="links">Sitio del Sistema de Agua</a></div>
             <br>Los sistemas de agua deben publicar informes de confianza del consumidor que informen sobre las fuentes de agua y los resultados de la calidad del agua para los contaminantes regulados. 
             <br><a href="${properties['CCR']}"target"_blank"><div class="links">Informe de Confianza del Consumidor</a></div>
-            <br><b>Conexiones de Servicio:</b> ${properties['PanelConnect_PanelConnections']}
+            <br><b>Conexiones de Servicio:</b> ${properties['connections_Connections']}
             <br><b>Población del Sistema:</b> ${properties['TableData_']}
             <br><b>Ingreso Familiar Medio:</b> ${properties['Median']}
             <br>
@@ -1095,7 +1095,7 @@ function createInfoPanel(){
             <br><a href="${properties['URL']}"target="_blank"><div class="links">Sitio del Sistema de Agua</a></div>
             <br>Los sistemas de agua deben publicar informes de confianza del consumidor que informen sobre las fuentes de agua y los resultados de la calidad del agua para los contaminantes regulados. 
             <br><a href="${properties['CCR']}"target"_blank"><div class="links">Informe de Confianza del Consumidor</a></div>
-            <br><b>Conexiones de Servicio:</b> ${properties['PanelConnect_PanelConnections']}
+            <br><b>Conexiones de Servicio:</b> ${properties['connections_Connections']}
             <br><b>Población del Sistema:</b> ${properties['TableData_']}
             <br><b>Ingreso Familiar Medio:</b> ${properties['Median']}
             <br>
@@ -1117,7 +1117,7 @@ function createInfoPanel(){
             <br><a href="${properties['URL']}"target="_blank"><div class="links">Sitio del Sistema de Agua</a></div>
             <br>Los sistemas de agua deben publicar informes de confianza del consumidor que informen sobre las fuentes de agua y los resultados de la calidad del agua para los contaminantes regulados. 
             <br><a href="${properties['CCR']}"target"_blank"><div class="links">Informe de Confianza del Consumidor</a></div>
-            <br><b>Conexiones de Servicio:</b> ${properties['PanelConnect_PanelConnections']}
+            <br><b>Conexiones de Servicio:</b> ${properties['connections_Connections']}
             <br><b>Población del Sistema:</b> ${properties['TableData_']}
             <br><b>Ingreso Familiar Medio:</b> ${properties['Median']}
             <br>
