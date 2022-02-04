@@ -292,6 +292,7 @@ li a, .dropbtn {
   
 li a:hover, .dropdown:hover .dropbtn {
     background-color: #005687;
+   
 }
   
 li.dropdown {
@@ -332,6 +333,7 @@ li.dropdown {
   .dropdown {
     position: relative;
     display: inline-block;
+    align-items: left;
   }
   
   /* Dropdown Content (Hidden by Default) */
